@@ -4,29 +4,28 @@ Aplikasi mobile Android untuk menghitung pembagian harta warisan secara akurat d
 
 ---
 
-## 📜 Hak Cipta & Kekayaan Intelektual (HKI)
+## 📱 Fitur Utama
 
-Ciptaan ini telah terdaftar dan dilindungi secara resmi oleh **Kementerian Hukum Republik Indonesia - Direktorat Jenderal Kekayaan Intelektual (DJKI)** berdasarkan Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta:
+- **Perhitungan Waris Sesuai Syariat**: Menghitung porsi warisan untuk pasangan (suami/istri), orang tua (ayah/ibu), kakek/nenek, dan anak-anak (*dzawil furudh* & *asabah*).
+- **Kalkulator Harta Warisan**: Estimasi total kekayaan berdasarkan jenis aset (Rumah, Kendaraan, Tabungan, Tanah, Perhiasan, dan Perusahaan).
+- **Riwayat Perhitungan**: Menyimpan riwayat hasil perhitungan secara cloud dan dapat diakses kapan saja.
+- **Panduan Faraidh**: Menyediakan ringkasan dasar hukum Islam mengenai waris, rukun, syarat, serta penghalang waris.
+- **Autentikasi & Profil**: Dilengkapi dengan fitur registrasi, login, verifikasi email, serta pengelolaan foto profil.
 
-* **Nomor Pencatatan**: `001051087`
-* **Nomor Permohonan**: `EC002025210827` (11 Desember 2025)
-* **Jenis Ciptaan**: Program Komputer
-* **Judul Ciptaan**: Penghitung Warisan Berdasarkan Hukum Islam Berbasis Android: Aplikasi WarisanKU
-* **Pemegang Hak Cipta**: Universitas Mercu Buana
-* **Pencipta**:
-  1. Andika Wahyu Pratama
-  2. Mohamad Yusuf
-  3. Ridho Putra Aulia
-  4. Syamsir Alam, S.Kom., M.T.
-  5. Muhammad Vicky Haikal
-  6. Rifky Nabil Firdaus
-* **Tanggal Diumumkan Pertama Kali**: 10 Desember 2025 (Jakarta Barat)
-* **Jangka Waktu Perlindungan**: Berlaku selama 50 (lima puluh) tahun sejak pertama kali diumumkan.
+---
+
+## 🛠️ Teknologi & Tools
+
+- **Bahasa Pemrograman**: Java & XML
+- **Framework & SDK**: Android SDK (minSdk 24, compileSdk 35)
+- **Backend / Database**: Google Firebase (Firebase Auth, Cloud Firestore)
+- **Media & Storage**: Cloudinary SDK & Glide
+- **Build System**: Gradle
 
 ---
 
 ## ⚖️ Lisensi (Copyright Notice)
 
-Hak Cipta © 2025–2026 Universitas Mercu Buana & Para Pencipta Terdaftar. Seluruh Hak Dilindungi Undang-Undang (*All Rights Reserved*).
+Hak Cipta © 2025–2026. Seluruh Hak Dilindungi Undang-Undang (*All Rights Reserved*).
 
-Dilarang menyalin, merekayasa balik (*reverse engineering*), memodifikasi, mendistribusikan, atau memanfaatkan ciptaan ini untuk keperluan komersial tanpa izin tertulis dari pemegang hak cipta.
+Dilarang menyalin, merekayasa balik (*reverse engineering*), memodifikasi, atau mendistribusikan source code ini tanpa izin tertulis dari pemilik hak cipta.
