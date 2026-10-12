@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 35
+    defaultConfig {
+        applicationId "com.example.warisan"
+        minSdkVersion 24
+        targetSdkVersion 35
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        namespace "com.example.warisan"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "CLOUDINARY_CLOUD_NAME", "\"dcvb6cgih\""
+            buildConfigField "String", "CLOUDINARY_API_KEY", "\"562148832126349\""
+            buildConfigField "String", "CLOUDINARY_API_SECRET", "\"0lPBSLPPB-WoBH74XAIAvbUMLN4\""
+        }
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "CLOUDINARY_CLOUD_NAME", "\"Warisan\""
+            buildConfigField "String", "CLOUDINARY_API_KEY", "\"562148832126349\""
+            buildConfigField "String", "CLOUDINARY_API_SECRET", "\"0lPBSLPPB-WoBH74XAIAvbUMLN4\""
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+        defaultConfig {
+            // Pastikan minSdkVersion adalah 24 (sesuai proyek Anda)
+            minSdkVersion 24
+            targetSdkVersion 34
+        }
+    }
+    aaptOptions {
+        cruncherEnabled false
+    }
+    packagingOptions {
+        pickFirst 'META-INF/DEPENDENCIES'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/NOTICE'
+        pickFirst 'com/google/firebase/Timestamp.class'
+    }
+    buildFeatures {
+        buildConfig true // Aktifkan fitur buildConfig
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.6.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
+
+    // Core AndroidX
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Firebase dengan BOM
+    implementation platform('com.google.firebase:firebase-bom:33.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+    // UI dan Utility
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.2'
+    implementation 'androidx.navigation:navigation-fragment:2.7.5'
+    implementation 'androidx.navigation:navigation-ui:2.7.5'
+
+    // Cloudinary
+    implementation 'com.cloudinary:cloudinary-android:2.3.0'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

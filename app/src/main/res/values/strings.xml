@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Izin Gambar -->
+    <string name="storage_permission_required">Izin penyimpanan diperlukan untuk memilih gambar</string>
+
+    <!-- App Branding -->
+    <string name="app_name">WarisanKU</string>
+    <string name="app_description">Aplikasi perhitungan warisan berdasarkan hukum Islam yang membantu Anda menghitung pembagian harta warisan secara akurat dan sesuai syariat.</string>
+    <string name="logo_warisan_ku">Logo WarisanKU</string>
+    <string name="warisan_ku">WarisanKU</string>
+
+    <!-- Main Menu -->
+    <string name="menu_start_calculation">Mulai Perhitungan</string>
+    <string name="menu_islamic_guide">Panduan Islam</string>
+    <string name="menu_history">Riwayat Perhitungan</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_title">Selamat Datang</string>
+    <string name="welcome_message">Silakan masuk ke akun Anda untuk melanjutkan menggunakan WarisanKU</string>
+    <string name="email_hint">Alamat Email</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="login_button">Masuk</string>
+    <string name="forgot_password">Lupa Kata Sandi?</string>
+    <string name="register_prompt">Daftar Akun Baru</string>
+    <string name="google_sign_in">Masuk dengan Google</string> <!-- Tambahan buat Google Sign-In -->
+
+    <!-- Registration Screen -->
+    <string name="register_title">Daftar Akun</string>
+    <string name="name_hint">Nama Lengkap</string>
+    <string name="confirm_password_hint">Konfirmasi Kata Sandi</string>
+    <string name="phone_hint">Nomor Telepon</string>
+    <string name="register_button">Daftar</string>
+    <string name="login_prompt">Sudah punya akun? Masuk</string>
+
+    <!-- Warisan Calculation -->
+    <string name="heir_data">Data Pewaris</string>
+    <string name="heir_name">Nama Pewaris</string>
+    <string name="total_wealth">Total Harta</string>
+    <string name="heir_debt">Hutang Pewaris</string>
+    <string name="funeral_cost">Biaya Pemakaman</string>
+    <string name="will">Wasiat</string>
+
+    <!-- Ahli Waris -->
+    <string name="heirs">Ahli Waris</string>
+    <string name="add_heir">Tambah Ahli Waris</string>
+    <string name="heir_name_label">Nama Ahli Waris</string>
+    <string name="family_relation">Hubungan Keluarga</string>
+    <string name="gender_placeholder">Jenis Kelamin Pewaris: %s</string> <!-- Placeholder dinamis -->
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+
+    <!-- Family Relations -->
+    <string name="father">Ayah</string>
+    <string name="mother">Ibu</string>
+    <string name="husband">Suami</string>
+    <string name="wife">Istri</string>
+    <string name="son">Anak Laki-laki</string>
+    <string name="daughter">Anak Perempuan</string>
+    <string name="brother">Saudara Laki-laki</string>
+    <string name="sister">Saudara Perempuan</string>
+    <string name="grandfather">Kakek</string>
+    <string name="grandmother">Nenek</string>
+    <string name="grandson">Cucu Laki-laki</string>
+    <string name="granddaughter">Cucu Perempuan</string>
+
+    <!-- Calculation Results -->
+    <string name="result_title">Hasil Perhitungan</string>
+    <string name="net_wealth">Harta Bersih</string>
+    <string name="inheritance_share">Bagian Warisan</string>
+    <string name="percentage">Persentase</string>
+    <string name="amount_rupiah">Jumlah (Rp)</string>
+
+    <!-- History -->
+    <string name="history_empty">Belum ada riwayat perhitungan</string>
+    <string name="calculation_date">Tanggal Perhitungan</string>
+    <string name="view_details">Lihat Detail</string>
+    <string name="delete_history">Hapus Riwayat</string>
+
+    <!-- Islamic Guide -->
+    <string name="legal_basis">Dasar Hukum Islam</string>
+    <string name="inheritance_pillars">Rukun Warisan</string>
+    <string name="inheritance_conditions">Syarat Warisan</string>
+    <string name="inheritance_barrier">Hijab Warisan</string>
+    <string name="asabah">Asabah</string>
+    <string name="dzawil_furudh">Dzawil Furudh</string>
+
+    <!-- Common Actions -->
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="delete">Hapus</string>
+    <string name="edit">Edit</string>
+    <string name="calculate">Hitung</string>
+    <string name="reset">Reset</string>
+    <string name="back">Kembali</string>
+    <string name="next">Lanjutkan</string>
+    <string name="finish">Selesai</string>
+    <string name="close">Tutup</string>
+
+    <!-- Validation Messages -->
+    <string name="required_field">Field ini wajib diisi</string>
+    <string name="invalid_email">Email tidak valid</string>
+    <string name="short_password">Kata sandi minimal 6 karakter</string>
+    <string name="password_mismatch">Konfirmasi kata sandi tidak cocok</string>
+    <string name="invalid_phone">Nomor telepon tidak valid</string>
+    <string name="invalid_amount">Jumlah harus lebih dari 0</string>
+    <string name="min_one_heir">Minimal harus ada satu ahli waris</string>
+
+    <!-- Success Messages -->
+    <string name="login_success">Login berhasil</string>
+    <string name="register_success">Pendaftaran berhasil</string>
+    <string name="calculation_saved">Perhitungan berhasil disimpan</string>
+    <string name="data_deleted">Data berhasil dihapus</string>
+
+    <!-- Error Messages -->
+    <string name="login_failed">Login gagal. Periksa email dan kata sandi</string>
+    <string name="register_failed">Pendaftaran gagal. Coba lagi</string>
+    <string name="network_error">Koneksi internet bermasalah</string>
+    <string name="server_error">Terjadi kesalahan server</string>
+    <string name="calculation_error">Terjadi kesalahan dalam perhitungan</string>
+
+    <!-- Currency -->
+    <string name="currency_rupiah">Rp</string>
+    <string name="currency_label">Mata Uang</string>
+
+    <!-- Settings -->
+    <string name="settings">Pengaturan</string>
+    <string name="profile">Profil</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="help">Bantuan</string>
+    <string name="logout">Keluar</string>
+
+    <!-- Confirmation -->
+    <string name="confirm_delete">Apakah Anda yakin ingin menghapus data ini?</string>
+    <string name="confirm_logout">Apakah Anda yakin ingin keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+
+    <!-- Version -->
+    <string name="version">Versi</string>
+
+    <!-- Islamic Terms -->
+    <string name="mawarits">Mawarits</string>
+    <string name="faraid">Faraid</string>
+    <string name="muwarris">Muwarris (Pewaris)</string>
+    <string name="warits">Warits (Ahli Waris)</string>
+    <string name="mauruts">Mauruts (Harta Warisan)</string>
+
+    <!-- Tambahan untuk layer7.xml -->
+    <string name="status_placeholder">Status: %s</string>
+    <string name="parent_condition">Kondisi Orang Tua: %s</string>
+    <string name="grandfather_condition">Kondisi Kakek: %s</string>
+    <string name="grandmother_condition">Kondisi Nenek: %s</string>
+    <string name="child_count">Jumlah Anak: %d</string>
+    <string name="asset_type">Jenis Harta: %s</string>
+</resources>

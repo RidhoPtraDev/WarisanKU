@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tombol Kembali -->
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:drawablePadding="8dp"
+            android:padding="0dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INPUT DATA PEWARIS"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Jenis Kelamin Pewaris -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis kelamin yang mewariskan"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/green_gradient"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Container Background Oval Hijau -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/rgJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbLaki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki"
+                    android:buttonTint="#2E7D32" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    android:buttonTint="#2E7D32" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Status Pernikahan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status pasangan"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/green_gradient"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/rgPernikahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbSuami"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ada suami"
+                    android:buttonTint="#2E7D32" />
+
+                <RadioButton
+                    android:id="@+id/rbIstri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ada istri"
+                    android:buttonTint="#2E7D32" />
+
+                <RadioButton
+                    android:id="@+id/rbTidakAdaPasangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak ada pasangan"
+                    android:buttonTint="#2E7D32" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Kondisi Orang Tua -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kondisi Orang Tua"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/green_gradient"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Container Background Oval Hijau -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval_background"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp">
+
+            <RadioGroup
+                android:id="@+id/rgOrangTua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbAyahHidupIbuMeninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ayah hidup, Ibu meninggal"
+                    android:buttonTint="#2E7D32" />
+
+                <RadioButton
+                    android:id="@+id/rbIbuHidupAyahMeninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ayah meninggal, Ibu hidup"
+                    android:buttonTint="#2E7D32" />
+
+                <RadioButton
+                    android:id="@+id/rbKeduanyaMeninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keduanya meninggal"
+                    android:buttonTint="#2E7D32" />
+
+                <RadioButton
+                    android:id="@+id/rbKeduanyaHidup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keduanya hidup"
+                    android:buttonTint="#2E7D32" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Tombol Lanjut -->
+        <Button
+            android:id="@+id/btnLanjut"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Lanjut"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+</ScrollView>

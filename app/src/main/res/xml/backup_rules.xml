@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Sertakan semua shared preferences (opsional, sesuaikan jika perlu) -->
+    <include domain="sharedpref" path="." />
+
+    <!-- Kecualikan file tertentu jika diperlukan (opsional) -->
+    <!-- <exclude domain="sharedpref" path="device.xml" /> -->
+</full-backup-content>

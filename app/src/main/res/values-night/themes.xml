@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.Warisan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Tidak memakai fitur splash screen Android 12 -->
+        <!-- Atribut di bawah ini dihapus karena butuh API 31 -->
+        <!--
+        <item name="android:windowSplashScreenAnimatedIcon">@null</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@null</item>
+        <item name="android:windowSplashScreenBackground">#004D25</item>
+        -->
+    </style>
+
+    <!-- Tema aktif aplikasi -->
+    <style name="Theme.Warisan" parent="Base.Theme.Warisan" />
+</resources>

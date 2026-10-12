@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tombol Kembali -->
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:drawablePadding="8dp"
+            android:padding="0dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="INPUT DATA PEWARIS"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <!-- Label Jenis Harta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/green_gradient"
+            android:padding="8dp"
+            android:text="Jenis harta yang diwariskan"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Container untuk semua harta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/oval_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Rumah -->
+            <CheckBox
+                android:id="@+id/cbRumah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumah"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutRumah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etRumahNilaiAset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="Nilai aset"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etRumahHargaPasar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estimasi Harga Pasar"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Kendaraan -->
+            <CheckBox
+                android:id="@+id/cbKendaraan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kendaraan"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutKendaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Mobil -->
+                    <CheckBox
+                        android:id="@+id/rbMobil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/custom_radio_hollow"
+                        android:text="Mobil"
+                        android:textColor="#000000"
+                        android:theme="@style/Theme.Warisan" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutMobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/etMobilNilaiAset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:hint="Nilai aset"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/etMobilHargaPasar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Estimasi Harga Pasar"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <!-- Motor -->
+                    <CheckBox
+                        android:id="@+id/rbMotor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_radio_hollow"
+                        android:text="Motor"
+                        android:textColor="#000000"
+                        android:theme="@style/Theme.Warisan" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutMotor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/etMotorNilaiAset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:hint="Nilai aset"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/etMotorHargaPasar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:hint="Estimasi Harga Pasar"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tabungan -->
+            <CheckBox
+                android:id="@+id/cbTabungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uang Tabungan"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutTabungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etTabungan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jumlah tabungan"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Tanah -->
+            <CheckBox
+                android:id="@+id/cbTanah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanah"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutTanah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etTanahNilaiAset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nilai aset tanah"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etTanahHargaPasar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estimasi Harga Pasar"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Perhiasan -->
+            <CheckBox
+                android:id="@+id/cbPerhiasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perhiasan"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutPerhiasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etPerhiasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estimasi nilai perhiasan"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <!-- Perusahaan -->
+            <CheckBox
+                android:id="@+id/cbPerusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perusahaan"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/layoutPerusahaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etPerusahaanNilaiAset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="Nilai aset"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etPerusahaanHargaPasar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estimasi Harga Pasar"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Total Kekayaan -->
+        <TextView
+            android:id="@+id/tvTotalKekayaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/oval_green_gradient"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Total kekayaan  Rp 0,00"
+            android:textColor="#000000" />
+
+        <!-- Tombol Hitung -->
+        <Button
+            android:id="@+id/btnLanjutLayer6"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_button"
+            android:text="Hitung"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
