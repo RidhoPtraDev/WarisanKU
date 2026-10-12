@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo.jpg" alt="WarisanKU Logo" width="130" height="130" style="border-radius: 20%;" />
+  <img src="https://raw.githubusercontent.com/RidhoPtraDev/WarisanKU/main/docs/logo.jpg" alt="WarisanKU Logo" width="130" height="130" style="border-radius: 20%;" />
 </p>
 
 <h1 align="center">WarisanKU</h1>
