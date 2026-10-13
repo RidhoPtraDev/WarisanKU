@@ -118,43 +118,7 @@ Pengembangan repositori ini dikelola secara terstruktur dan terdistribusi sesuai
 | **Muhammad Vicky Haikal** | **Quality Assurance (QA) & Documentation / Laporan** | Pengujian Kualitas Sistem, Penyusunan Laporan Proyek & Dokumentasi Teknis |
 | **Rifky Nabil Firdaus** | **UI/UX Designer** | Desain Antarmuka Pengguna (UI), Perancangan Tata Letak & User Experience (UX), Aset Visual |
 
----
 
-## 🚀 Panduan Memulai (Getting Started)
-
-### Prasyarat (Prerequisites)
-* Android Studio (Ladybug | 2024.2 atau versi lebih baru direkomendasikan).
-* JDK 17 (Java Development Kit) terpasang di sistem.
-* Android SDK dengan Build-Tools 35.0.0.
-* Perangkat Android fisik dengan opsi pengembang aktif, atau Android Virtual Device (AVD).
-
-### Instalasi & Setup Lokal
-
-1. **Clone Repository:**
-   ```bash
-   git clone https://github.com/RidhoPtraDev/WarisanKU.git
-   cd WarisanKU
-   ```
-
-2. **Konfigurasi Kredensial Firebase:**
-   * Pastikan file `google-services.json` yang sah dari Firebase Console diletakkan di direktori:
-     ```
-     WarisanKU/app/google-services.json
-     ```
-
-3. **Kompilasi & Build Project:**
-   ```bash
-   # Di Windows PowerShell / Command Prompt:
-   .\gradlew.bat compileDebugSources
-
-   # Menjalankan Unit Testing:
-   .\gradlew.bat testDebugUnitTest
-   ```
-
-4. **Jalankan Aplikasi:**
-   * Buka proyek melalui Android Studio, pilih perangkat target, lalu tekan **Run 'app'** (`Shift + F10`).
-
----
 
 ## 🔒 Standar Keamanan & Reliabilitas (Security & Reliability)
 
