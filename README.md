@@ -113,12 +113,10 @@ Pengembangan repositori ini dikelola secara terstruktur dan terdistribusi sesuai
 
 | Anggota Tim | Peran Teknis | Tanggung Jawab Modul |
 | :--- | :--- | :--- |
-| **Ridho Putra Aulia** | **Lead Mobile Engineer & Cloud Architect** | Core Faraidh Engine, Integrasi Firebase, Cloudinary CDN, Async Refactor, Repositori |
-| **Andika Wahyu Pratama** | **Mobile Developer & QA** | Form Input Pewaris, Alur Validasi Antarmuka, Pengujian Fungsional |
-| **Mohamad Yusuf** | **Mobile Developer** | Modul Valuasi Harta Kekayaan, Format Mata Uang Real-Time |
-| **Syamsir Alam, S.Kom., M.T.** | **Technical Advisor & Supervisor** | Penjaminan Kualitas Sistem, Review Arsitektur & Perhitungan Syariat |
-| **Muhammad Vicky Haikal** | **UI/UX & Frontend Implementer** | Desain Visual Tata Letak, Drawable Vektor, Palet Warna Syariah |
-| **Rifky Nabil Firdaus** | **Content & Knowledge Base Specialist**| Penyusunan Materi Edukasi Faraidh, Alur Pengujian Pengguna |
+| **Ridho Putra Aulia** | **Lead Mobile Engineer & Fullstack Engineer** | Core Faraidh Engine, Backend & Cloud Architecture, Integrasi Firebase, Cloudinary CDN, Async Refactoring, Repositori |
+| **Andika Wahyu Pratama** | **Quality Assurance (QA)** | Pengujian Fungsionalitas Sistem, Validasi Form Input Pewaris, Verifikasi Alur Aplikasi |
+| **Muhammad Vicky Haikal** | **Quality Assurance (QA) & Documentation / Laporan** | Pengujian Kualitas Sistem, Penyusunan Laporan Proyek & Dokumentasi Teknis |
+| **Rifky Nabil Firdaus** | **UI/UX Designer** | Desain Antarmuka Pengguna (UI), Perancangan Tata Letak & User Experience (UX), Aset Visual |
 
 ---
 
